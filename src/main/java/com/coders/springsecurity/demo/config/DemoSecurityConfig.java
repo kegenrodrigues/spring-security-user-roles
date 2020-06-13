@@ -41,8 +41,10 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 			.permitAll()
 		.and()
 		.logout()
-		.permitAll();
-		
+		.permitAll()
+		.and()
+		.exceptionHandling()
+		.accessDeniedPage("/denied-page");
 	}
 
 	
