@@ -24,6 +24,14 @@
 		<a href = "${pageContext.request.contextPath}/leaders"> Leadership Meeting</a>
 		Only for Manager folks
 	</p>
+
+	<!-- Add a link to point to /systems this is for the managers-->
+	<p>
+		<a href = "${pageContext.request.contextPath}/systems">IT systems Meeting</a>
+		Only for Admin folks
+	</p>
+
+
 	
 	<!-- Logout -->
 	<form:form action = "${pageContext.request.contextPath}/logout" method = "POST">
